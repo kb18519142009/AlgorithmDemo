@@ -3,12 +3,12 @@ package com.example.algorithmdemo.aboutstring;
 import android.util.Log;
 
 /**
- * Description：
+ * Description：删除字符串中的重复字符
  * Created by kang on 2018/4/12.
  */
 
-public class StringTest {
-    private static final String TAG = "StringTest";
+public class RemoveRepeatString {
+    private static final String TAG = "RemoveRepeatString";
 
     public static void removeMethod(String s) {
         StringBuffer sb = new StringBuffer();
