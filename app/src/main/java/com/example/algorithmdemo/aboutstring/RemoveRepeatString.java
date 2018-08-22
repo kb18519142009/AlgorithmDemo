@@ -1,7 +1,5 @@
 package com.example.algorithmdemo.aboutstring;
 
-import android.util.Log;
-
 /**
  * Description：删除字符串中的重复字符
  * Created by kang on 2018/4/12.
@@ -10,7 +8,7 @@ import android.util.Log;
 public class RemoveRepeatString {
     private static final String TAG = "RemoveRepeatString";
 
-    public static void removeMethod(String s) {
+    public static String removeMethod(String s) {
         StringBuffer sb = new StringBuffer();
         int len = s.length();
         int i = 0;
@@ -28,6 +26,6 @@ public class RemoveRepeatString {
                 sb.append(c);
             }
         }
-        Log.e(TAG, sb.toString());
+        return sb.toString();
     }
 }
