@@ -25,7 +25,7 @@ public class ReplaceString {
             return sentence;
         }
 
-        // 去掉字符串收尾的空格
+        // 去掉字符串首尾的空格
         sentence = trim(sentence);
         int len = sentence.length();
         char[] chars = sentence.toCharArray();
