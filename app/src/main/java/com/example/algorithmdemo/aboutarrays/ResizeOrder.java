@@ -15,6 +15,14 @@ package com.example.algorithmdemo.aboutarrays;
  */
 
 public class ResizeOrder {
+    public static void main(String[] args) {
+        int[] array = new int[]{6, 7, 4, 3, 21, 8, 0, 1, 5, 55, 11};
+        resizeOrder(array);
+        for (int i : array) {
+            System.out.println(i);
+        }
+    }
+
     public static int[] resizeOrder(int[] nums) {
         if (nums == null || nums.length <= 1) {
             return nums;

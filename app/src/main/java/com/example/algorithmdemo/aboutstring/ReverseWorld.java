@@ -25,7 +25,7 @@ public class ReverseWorld {
         }
 
         while (start < end) {
-            // 收尾字符互换，直到替换完成。
+            // 首尾字符互换，直到替换完成。
             char temp = chars[start];
             chars[start] = chars[end];
             chars[end] = temp;
