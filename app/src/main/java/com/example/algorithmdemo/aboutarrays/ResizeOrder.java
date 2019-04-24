@@ -17,7 +17,7 @@ package com.example.algorithmdemo.aboutarrays;
 public class ResizeOrder {
     public static void main(String[] args) {
         int[] array = new int[]{6, 7, 4, 3, 21, 8, 0, 1, 5, 55, 11};
-        resizeOrder(array);
+        resizeOrder2(array);
         for (int i : array) {
             System.out.println(i);
         }

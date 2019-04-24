@@ -8,12 +8,16 @@ package com.example.algorithmdemo.aboutstring;
 public class RemoveRepeatString {
     private static final String TAG = "RemoveRepeatString";
 
+    public static void main(String[] args) {
+        String s = "ssaaasssfffssaaqqq";
+        System.out.println(removeMethod(s));
+    }
+
     public static String removeMethod(String s) {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         int len = s.length();
-        int i = 0;
         boolean flag = false;
-        for (i = 0; i < len; i++) {
+        for (int i = 0; i < len; i++) {
             char c = s.charAt(i);
             if (s.indexOf(c) != s.lastIndexOf(c)) {
                 flag = false;
