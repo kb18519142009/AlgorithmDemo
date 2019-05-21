@@ -13,18 +13,18 @@ public class RemoveRepeatString {
         System.out.println(removeMethod(s));
     }
 
-    public static String removeMethod(String s) {
+    public static String removeMethod(String str) {
         StringBuilder sb = new StringBuilder();
-        int len = s.length();
+        int len = str.length();
         boolean flag = false;
         for (int i = 0; i < len; i++) {
-            char c = s.charAt(i);
-            if (s.indexOf(c) != s.lastIndexOf(c)) {
+            char c = str.charAt(i);
+            if (str.indexOf(c) != str.lastIndexOf(c)) {
                 flag = false;
             } else {
                 flag = true;
             }
-            if (i == s.indexOf(c))
+            if (i == str.indexOf(c))
                 flag = true;
             if (flag) {
                 sb.append(c);

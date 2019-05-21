@@ -30,10 +30,12 @@ public class SelectSort {
                     minIndex = j;
                 }
             }
-            //将最小元素放到本次循环的前端
-            temp = array[i];
-            array[i] = array[minIndex];
-            array[minIndex] = temp;
+            if (minIndex != i) {
+                //将最小元素放到本次循环的前端
+                temp = array[i];
+                array[i] = array[minIndex];
+                array[minIndex] = temp;
+            }
         }
     }
 }
